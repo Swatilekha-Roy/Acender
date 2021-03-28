@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  font-family: 'Crimson Text', serif;
+    background-color: rgb(237, 237, 238);
+	background-color: rgb(235, 230, 234)
+}
+/*
+h1,h2,h3,h4,h5 {
+    font-family: 'Proza Libre', sans-serif;
+    color: #6c8b2e;
+    font-weight: 400;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+/* Navbar */
+
+.navbar {
+	background:#346d7e;
+	backface-visibility: hidden;
+	margin-bottom: 10%;
+}
+.navbar.navbar-no-bg {background: #346d7e;}
+
+.navbar-dark .navbar-nav { font-size: 15px; color: #ffffff; font-weight: 600; }
+.navbar-dark .navbar-nav .nav-link { color: #ffffff; border: 0; }
+.navbar-dark .navbar-nav .nav-link:hover { color: #dfe9ec; }
+.navbar-dark .navbar-nav .nav-link:focus { color: #dfe9ec; outline: 1rem; }
+
+.navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 0.5rem; }
+
+
+/* Top Content */
+
+.logo-img {
+	margin-top: 14%;
+
+	margin-right: 20%;
+	height: 450px;
+}
+
+.top-img {
+	margin-left: 4%;
+}
+
+.top-head {
+	margin-top: 30%;
+	margin-left: 8%;
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+	.logo-img {
+		height: 350px;
+		padding-top: 40px;
+		align-items: center;
+	}
+
+	.top-head {
+		margin-top: 5%;
+	}
+}
+
+
+
+
+
+.medium-paragraph {
+	font-size: 17px;
+	line-height: 32px;
+}
+
+.blink {
+	animation: blink 0.5s infinite;
+  }
+  @keyframes blink{
+	to { opacity: .0; }
+  }
+  .flex {
+	  display: flex;
+  }
+  .header-sub-title {
+	color:#8b4f82 ;
+	font-size: 5vw;
+  }
+
+.hero{
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	padding-top: 10vh;
+	padding-bottom: 6vh;
+}
+
+.feeling p{
+	font-size: 5vw;
+}
+
+
+
+
+/***** Blog *****/
+
+.card-img {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+  }
+
+  .card-img {
+    -o-transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+    -ms-transition: all .8s;
+    transition: all .8s;
+}
+ 
+.card-img:hover {
+    -o-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+}
+  
+  .card-title {
+	margin-bottom: 0.3rem;
+	margin-top: 2rem;
+  }
+  
+  .cat {
+	display: inline-block;
+	margin-bottom: 1rem;
+  }
+  
+  .fa-users {
+	margin-left: 1rem;
+  }
+  
+  .card-footer {
+	font-size: 0.8rem;
+  }
+
+
+
+
+
+  /* Donation */
+  /***** Services *****/
+ 
+.services-box {
+    padding-top: 30px;
+    text-align: left;
+}
+ 
+.services-box .services-box-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 40px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 28px;
+    background: #9b59b6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffb24b 0%, #9b59b6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb24b), color-stop(100%,#9b59b6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffb24b 0%,#9b59b6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffb24b 0%,#9b59b6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffb24b 0%,#9b59b6 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffb24b 0%,#9b59b6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#9b59b6',GradientType=0 ); /* IE6-9 */
+}
+ 
+.services-box h3 {
+    margin-top: 0;
+    padding: 0 0 10px 0;
+}
+
+
+
+
+/* Footer 
+
+
+footer {
+	margin-top: 70px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 40px 0 0 0;
+	background:#346d7e;
+	color: #ffffff;
+	text-align: left;
+}
+
+.footer-right {
+	text-align: right;
+}
+
+.footer-right a {
+	margin: 3% 9px auto 0;
+    font-size: 32px;
+    color: #ffffff;
+}
+.footer-right a:hover, .footer-right a:focus { color:#dfe9ec; }
+
+.footer-bottom {
+	margin-top: 10%;
+	margin-left: 5%;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.footer-bottom a {
+	font-size: 32px;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+.footer-bottom a:hover, .footer-bottom a:focus { color:#dfe9ec; }
+
+
+* {
+	overflow-x: hidden;
+}
