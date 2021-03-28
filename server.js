@@ -17,7 +17,7 @@ const io = socketio(server);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = 'Groovy';
+const botName = 'Acemate';
 
 // Run when client connects
 io.on('connection', (socket) => {
@@ -39,7 +39,7 @@ io.on('connection', (socket) => {
     const user = userJoin(socket.id, username, room);
     socket.join(user.room);
     // Welcome current user
-    socket.emit('message', formatMessage(botName, 'Welcome to Song Bud!'));
+    socket.emit('message', formatMessage(botName, 'Welcome to Chat Room!'));
 
     // Broadcast to all connections except the current connection joining
     socket.broadcast

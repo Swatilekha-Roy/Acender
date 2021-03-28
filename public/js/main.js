@@ -65,15 +65,5 @@ function outputUsers(users) {
     ${users.map((user) => `<li>${user.username}</li>`).join('')}
     `;
 }
-if(room=="depressed")
+if(room=="listen-in")
 document.getElementById('audiotag1').play();
-else if(room=="gloomy")
-document.getElementById('audiotag2').play();
-else if(room=="cheerful")
-document.getElementById('audiotag3').play();
-else if(room=="calm")
-document.getElementById('audiotag4').play();
-else if(room=="romantic")
-document.getElementById('audiotag5').play();
-else
-document.getElementById('audiotag6').play();
