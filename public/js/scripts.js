@@ -118,7 +118,7 @@ for(i=0; i<$btn.length; i++) {
 
 
 
-/* Asexuality Quiz */
+/* Asexuality Quiz 
 // QUESTIONS
 
 const questions = [
@@ -299,3 +299,4 @@ generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
 previousButton.addEventListener('click',loadPreviousQuestion);
 result.addEventListener('click',restartQuiz);
+*/
